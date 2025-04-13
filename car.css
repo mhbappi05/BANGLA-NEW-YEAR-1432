@@ -1,0 +1,74 @@
+.rickshaw {
+    position: absolute;
+    bottom: 60px; /* Adjusted to make it appear larger */
+    left: -400px; /* Adjusted to start further off-screen */
+    width: 300px; /* Increased width */
+    height: 180px; /* Increased height */
+    animation: drive 10s linear infinite; /* Adjusted animation speed */
+}
+
+.body {
+    position: absolute;
+    bottom: 30px; /* Adjusted position */
+    width: 300px; /* Increased width */
+    height: 105px; /* Increased height */
+    background-color: #c2185b;
+    border-radius: 15px; /* Adjusted radius */
+    border: 3px solid black; /* Added outline */
+}
+
+.roof {
+    position: absolute;
+    bottom: 135px; /* Adjusted position */
+    width: 300px; /* Increased width */
+    height: 60px; /* Increased height */
+    background: #ffb300;
+    border-top-left-radius: 150px; /* Adjusted radius */
+    border-top-right-radius: 150px; /* Adjusted radius */
+    border: 3px solid black; /* Added outline */
+}
+
+.window {
+    position: absolute;
+    bottom: 52.5px; /* Adjusted position */
+    left: 30px; /* Adjusted position */
+    width: 60px; /* Increased width */
+    height: 60px; /* Increased height */
+    background: #81d4fa;
+    border-radius: 8px; /* Adjusted radius */
+    border: 2px solid black; /* Added outline */
+}
+
+.door {
+    position: absolute;
+    bottom: 30px; /* Adjusted position */
+    left: 120px; /* Adjusted position */
+    width: 60px; /* Increased width */
+    height: 90px; /* Increased height */
+    background: #fbc02d;
+    border-radius: 8px; /* Adjusted radius */
+    border: 2px solid black; /* Added outline */
+}
+
+.wheel {
+    position: absolute;
+    bottom: 0;
+    width: 60px; /* Increased width */
+    height: 60px; /* Increased height */
+    background: #0d47a1;
+    border-radius: 50%;
+    border: 3px solid black; /* Added outline */
+}
+
+.front {
+    left: 30px; /* Adjusted position */
+}
+
+.back {
+    right: 30px; /* Adjusted position */
+}
+
+@keyframes drive {
+    0% { left: -400px; }
+    100% { left: 100vw; }
+}

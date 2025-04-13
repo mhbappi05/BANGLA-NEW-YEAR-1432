@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff3e0;
+    color: #4e342e;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .image-box {
+    background-color: #ffcc80;
+    border: 5px solid #ff6f00;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-box img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+  }
+  
+  .image-box p {
+    margin-top: 10px;
+    font-weight: bold;
+  }

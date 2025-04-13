@@ -1,0 +1,72 @@
+.kite {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    z-index: 10;
+  }
+  
+  /* Triangles */
+  .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  /* Top-left — yellow */
+  .yellow {
+    border-width: 100px 0 0 100px;
+    border-color: #0278A2 transparent transparent transparent;
+    top: 100px;
+    left: 0;
+  }
+  
+  /* Top-right — red */
+  .red {
+    border-width: 100px 100px 0 0;
+    border-color: #D4EE49 transparent transparent transparent;
+    top: 100px;
+    left: 100px;
+  }
+  
+  /* Bottom-left — green */
+  .green {
+    border-width: 0 0 100px 100px;
+    border-color: transparent transparent #D4EE49 transparent;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Bottom-right — blue */
+  .blue {
+    border-width: 0 100px 100px 0;
+     
+    border-color: transparent transparent #0278A2 transparent;
+    top: 0;
+    left: 100px;
+  }
+  
+  /* String */
+  .string {
+    position: absolute;
+    width: 2px;
+    height: 120px;
+    background: brown;
+    top: 200px;
+    left: 99px;
+    transform: rotate(0deg);
+  }
+  
+  /* Small bows on the string */
+  .bow {
+    width: 20px;
+    height: 20px;
+    background: red;
+    transform: rotate(45deg);
+    margin: 20px auto;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  
